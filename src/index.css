@@ -9,7 +9,7 @@ body {
 	box-sizing: border-box;
 	font-family: "Manrope", sans-serif;
 	font-size: 1rem;
-  color: #fff;
+	color: #fff;
 }
 
 #root {
@@ -18,46 +18,104 @@ body {
 	min-height: 100vh;
 }
 
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px 0 40px;
-  border-bottom: 1px solid #e5e8eb27;
-  height: 65px;
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px 0 40px;
+	border-bottom: 1px solid #e5e8eb27;
+	height: 65px;
 }
 
-header .logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.8rem;
-  column-gap: 8px;
+header .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.8rem;
+	column-gap: 16px;
 }
 
 header .logo img {
-  height: 24px;
-  width: 24px;
+	height: 24px;
+	width: 24px;
 }
 
-header .navigation{
-  display: flex;
-  column-gap: 24px;
-  
+header .navigation {
+	display: flex;
+	column-gap: 24px;
 }
 
 header .navigation a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 400;
-  font-size: 0.9rem;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+	font-size: 0.9rem;
 }
 
-header .nav-button{
-  text-decoration: none;
-  color: #fff;
-  padding: 8px 16px;
-  border: 1px solid #7a7a7a;
-  border-radius: 8px;
-  font-size: 0.9rem;
+header .nav-button {
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 16px;
+	border: 1px solid #7a7a7a;
+	border-radius: 8px;
+	font-size: 0.9rem;
+}
+
+header .nav-button:hover {
+	border-color: #fff;
+}
+
+.form-container {
+	width: fit-content;
+	margin: 100px auto 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.form-container h2 {
+	text-align: center;
+}
+
+.form-container form input {
+	background-color: #292938;
+	border: none;
+	border-radius: 6px;
+	height: 44px;
+	width: 360px;
+	margin-bottom: 8px;
+	padding: 0 16px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.form-container form input::placeholder {
+	color: #ffffff96;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.form-container form button {
+	height: 44px;
+	width: 100%;
+	border-radius: 6px;
+	border: none;
+	background-color: #1919e6;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	margin-top: 8px;
+}
+
+.form-container p {
+	color: #ffffff96;
+	font-size: 12px;
+}
+
+.form-container p a {
+	text-decoration: none;
+	color: #1919e6;
 }
