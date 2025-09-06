@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Auth() {
 	return (
 		<>
@@ -8,6 +10,7 @@ export default function Auth() {
 						type="email"
 						placeholder="Email address"
 						name="email"
+						required
 					/>
 					<br />
 					<input
@@ -27,13 +30,16 @@ export default function Auth() {
 						type="password"
 						placeholder="Confirm password"
 						name="confirm-password"
+						required
 					/>
 					<br />
 					<button>Sign Up</button>
 				</form>
 				<p>
 					Already have an account?{" "}
-					<a href="#">Login</a>
+					<Link to="/login" replace>
+						Login
+					</Link>
 				</p>
 			</div>
 		</>

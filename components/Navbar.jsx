@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../src/assets/logo.svg";
 
 export default function Navbar() {
@@ -9,15 +10,27 @@ export default function Navbar() {
 					<h1>Matinee</h1>
 				</div>
 				<nav className="navigation">
-					<a href="#">Home</a>
-					<a href="#">Movies</a>
-					<a href="#">TV Shows</a>
-					<a href="#">People</a>
+					<Link to="/home" replace>
+						Home
+					</Link>
+					<Link to="/movies" replace>
+						Movies
+					</Link>
+					<Link to="/tv-show" replace>
+						TV Shows
+					</Link>
+					<Link to="/people" replace>
+						People
+					</Link>
 				</nav>
 				<div className="action">
-					<a className="nav-button" href="#">
+					<Link
+						className="nav-button"
+						to="/login"
+						replace
+					>
 						Log In
-					</a>
+					</Link>
 				</div>
 			</header>
 		</>
