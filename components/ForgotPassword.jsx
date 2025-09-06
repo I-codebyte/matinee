@@ -9,20 +9,13 @@ export default function ForgotPassword() {
 				</p>
 				<form action="">
 					<input
-						type="password"
-						placeholder="Enter your new password"
-						name="password"
+						type="email"
+						placeholder="Enter your email address"
+						name="email"
 						required
 					/>
 					<br />
-					<input
-						type="password"
-						placeholder="Confirm your new password"
-						name="password"
-						required
-					/>
-					<br />
-					<button>Reset Password</button>
+					<button>Send Reset Link</button>
 				</form>
 			</div>
 		</>
