@@ -130,10 +130,35 @@ p.text-forgot-password {
 	margin: 12px 0;
 }
 
-p.text-forgot-password a{
+p.text-forgot-password a {
 	color: #ffffff96;
 }
 
-p.text-forgot-password a:hover{
+p.text-forgot-password a:hover {
 	color: #1919e6;
+}
+
+section.hero {
+	height: 32vw;
+	background-image: url("./assets/hero-img.svg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 12px;
+	margin: 0 32px;
+	overflow: hidden;
+}
+div.l-gradient {
+	height: inherit;
+	background-image: linear-gradient(to top, #000000c5, #ffffff00);
+	padding-left: 32px;
+	padding-top: calc(32vw * 0.67);
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+div.hero-action {
+	display: flex;
+	column-gap: 10px;
 }
