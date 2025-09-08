@@ -145,20 +145,55 @@ section.hero {
 	background-size: cover;
 	background-repeat: no-repeat;
 	border-radius: 12px;
-	margin: 0 32px;
-	overflow: hidden;
+	margin: 4px 32px 0;
 }
 div.l-gradient {
 	height: inherit;
 	background-image: linear-gradient(to top, #000000c5, #ffffff00);
 	padding-left: 32px;
-	padding-top: calc(32vw * 0.67);
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+	border-radius: 12px;
+}
+
+div.l-gradient h1 {
+	padding-top: calc(32vw * 0.6);
+	font-weight: 900;
+}
+
+div.l-gradient p {
+	color: #ffffff96;
+	font-size: 0.85rem;
+	width: 45%;
 }
 
 div.hero-action {
 	display: flex;
 	column-gap: 10px;
+}
+
+div.hero-action button{
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+}
+
+button.play{
+	background-color: #1919e6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button.more-info{
+	background-color: #79797967;
+}
+
+button.play::before{
+	content: url('./assets/icons8-play-30.svg');
+	/* display: inline-block;
+	width: 6px;
+	height: 6px; */
 }
