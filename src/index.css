@@ -191,9 +191,9 @@ button.more-info{
 	background-color: #79797967;
 }
 
-button.play::before{
-	content: url('./assets/icons8-play-30.svg');
-	/* display: inline-block;
+/* button.play::before{
+	content: url('./assets/icons8-play-30.png');
+	display: inline-block;
 	width: 6px;
-	height: 6px; */
-}
+	height: 6px;
+} */
