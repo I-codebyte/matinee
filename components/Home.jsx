@@ -1,3 +1,5 @@
+import Carousel from "./Carousel";
+
 export default function Home() {
 	return (
 		<>
@@ -22,6 +24,9 @@ export default function Home() {
 							</button>
 						</div>
 					</div>
+				</section>
+				<section className="content-movies">
+					<Carousel />
 				</section>
 			</div>
 		</>
