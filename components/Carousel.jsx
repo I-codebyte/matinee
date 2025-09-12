@@ -13,7 +13,7 @@ export default function Carousel({ title, cardlist }) {
 	// });
 	return (
 		<>
-			<h5 className="carousel-title">Recommended for you</h5>
+			<h5 className="carousel-title">{title}</h5>
 			<div className="cards-container">
 				<div className="card">
 					<img

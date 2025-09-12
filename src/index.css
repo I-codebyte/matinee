@@ -223,7 +223,7 @@ div.cards-container {
 div.cards-container .card {
 	display: flex;
 	flex-direction: column;
-	gap: 4px;
+	gap: 12px;
 	align-items: center;
 }
 
