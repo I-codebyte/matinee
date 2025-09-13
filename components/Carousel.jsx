@@ -1,4 +1,6 @@
-export default function Carousel({ title, cardlist }) {
+import { clsx } from "clsx";
+
+export default function Carousel({ title, cardlist, scroll }) {
 	// const card = cardlist.map((card) => {
 	// 	return (
 	// 		<div className="card">
@@ -11,10 +13,18 @@ export default function Carousel({ title, cardlist }) {
 	// 		</div>
 	// 	);
 	// });
+
+	const isScrollable = scroll; //boolean
+
+	const caroSwitch = clsx({
+		"cards-container": !isScrollable,
+		"cards-container scroll": isScrollable,
+	});
+
 	return (
 		<>
 			<h5 className="carousel-title">{title}</h5>
-			<div className="cards-container">
+			<div className={caroSwitch}>
 				<div className="card">
 					<img
 						src="../src/assets/card-img.svg"

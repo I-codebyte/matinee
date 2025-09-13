@@ -16,7 +16,7 @@ export default function Navbar() {
 					<Link to="/movies" replace>
 						Movies
 					</Link>
-					<Link to="/tv-show" replace>
+					<Link to="/tv-shows" replace>
 						TV Shows
 					</Link>
 					<Link to="/people" replace>

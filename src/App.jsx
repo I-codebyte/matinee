@@ -4,6 +4,9 @@ import CreateAcc from "../components/CreateAcc";
 import Login from "../components/Login";
 import ForgotPassword from "../components/ForgotPassword";
 import Home from "../components/Home";
+import Movies from "../components/Movies";
+import Tv from "../components/Tv";
+import People from "../components/People";
 
 export default function App() {
 	return (
@@ -31,6 +34,18 @@ export default function App() {
 					<Route
 						path="/forgot-password"
 						element={<ForgotPassword />}
+					/>
+					<Route
+						path="/movies"
+						element={<Movies />}
+					/>
+					<Route
+						path="/tv-shows"
+						element={<Tv />}
+					/>
+					<Route
+						path="/people"
+						element={<People />}
 					/>
 				</Routes>
 			</Router>

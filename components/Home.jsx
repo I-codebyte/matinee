@@ -26,10 +26,10 @@ export default function Home() {
 					</div>
 				</section>
 				<section className="content-movies">
-					<Carousel title="Recommended for you" />
-					<Carousel title="Trending" />
-					<Carousel title="New Releases" />
-					<Carousel title="Popular Movies" />
+					<Carousel title="Recommended for you" scroll={true} />
+					<Carousel title="Trending" scroll={true} />
+					<Carousel title="New Releases" scroll={true} />
+					<Carousel title="Popular Movies" scroll={true} />
 				</section>
 			</div>
 		</>
